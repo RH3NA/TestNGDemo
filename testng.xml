@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="TestNG3"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Rebecca/IdeaProjects/TestNGDemo/src/test/java/TestNG.java">
+        <groups>
+            <run>
+                <include name="Group A"/>
+                <include name="Group B"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG1"/>
+            <class name="TestNG2"/>
+            <class name="TestNG3"/>
+            </classes>
+        </test>
+
+    </suite>

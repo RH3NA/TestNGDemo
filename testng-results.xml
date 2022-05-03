@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-03T04:17:14 CEST" name="All Test Suite" finished-at="2022-05-03T04:17:14 CEST" duration-ms="53">
+    <groups>
+      <group name="Group B">
+        <method signature="TestNG2.calculatorTest()[pri:1, instance:TestNG2@731f8236]" name="calculatorTest" class="TestNG2"/>
+        <method signature="TestNG1.hello()[pri:2, instance:TestNG1@5a4aa2f2]" name="hello" class="TestNG1"/>
+        <method signature="TestNG1.hello2()[pri:2, instance:TestNG1@5a4aa2f2]" name="hello2" class="TestNG1"/>
+      </group> <!-- Group B -->
+      <group name="Group A">
+        <method signature="TestNG2.calculatorTest()[pri:1, instance:TestNG2@731f8236]" name="calculatorTest" class="TestNG2"/>
+        <method signature="TestNG2.n()[pri:3, instance:TestNG2@731f8236]" name="n" class="TestNG2"/>
+      </group> <!-- Group A -->
+    </groups>
+    <test started-at="2022-05-03T04:17:14 CEST" name="C:/Users/Rebecca/IdeaProjects/TestNGDemo/src/test/java/TestNG.java" finished-at="2022-05-03T04:17:14 CEST" duration-ms="53">
+      <class name="TestNG2">
+        <test-method signature="calculatorTest()[pri:1, instance:TestNG2@731f8236]" started-at="2022-05-03T04:17:14 CEST" name="calculatorTest" finished-at="2022-05-03T04:17:14 CEST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [4] but found [7]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [4] but found [7]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at TestNG2.calculatorTest(TestNG2.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorTest -->
+        <test-method signature="n()[pri:3, instance:TestNG2@731f8236]" started-at="2022-05-03T04:17:14 CEST" name="n" finished-at="2022-05-03T04:17:14 CEST" depends-on-methods="TestNG2.calculatorTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG2.n() on instance TestNG2@731f8236 depends on not successfully finished methods 
+[TestNG2.calculatorTest() on instance TestNG2@731f8236]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG2.n() on instance TestNG2@731f8236 depends on not successfully finished methods 
+[TestNG2.calculatorTest() on instance TestNG2@731f8236]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- n -->
+      </class> <!-- TestNG2 -->
+      <class name="TestNG1">
+        <test-method signature="hello()[pri:2, instance:TestNG1@5a4aa2f2]" started-at="2022-05-03T04:17:14 CEST" name="hello" finished-at="2022-05-03T04:17:14 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hello -->
+        <test-method signature="hello2()[pri:2, instance:TestNG1@5a4aa2f2]" started-at="2022-05-03T04:17:14 CEST" name="hello2" finished-at="2022-05-03T04:17:14 CEST" depends-on-methods="TestNG1.hello" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hello2 -->
+      </class> <!-- TestNG1 -->
+    </test> <!-- C:/Users/Rebecca/IdeaProjects/TestNGDemo/src/test/java/TestNG.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
